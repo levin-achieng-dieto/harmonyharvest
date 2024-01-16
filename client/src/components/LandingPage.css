@@ -7,7 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    margin-bottom: 16rem;
+    margin-bottom: 20rem;
 }
 
 .landing-page {
@@ -83,7 +83,100 @@
     margin-bottom: 1rem;
 }
 
+/* Mission and vision */
+/* mission */
 
+.mission {
+    display: flex;
+    margin: 3rem 4rem;
+}
+
+.mission_statement {
+    margin-top: 3rem;
+    margin-right: 5rem;
+}
+
+.mission_statement h1 {
+    color: rgb(228, 142, 37);
+    font-size: 1.5rem;
+}
+
+.mission_statement h2 {
+    font-size: 2.7rem;
+    text-align: left;
+    margin: 1.8rem 0;
+}
+
+
+
+.download_seven img {
+    border-radius: 1.2rem;
+}
+
+
+/* vision */
+.mission_vision {
+    width: 70%;
+    margin: auto;
+}
+
+
+.vision {
+    display: flex;
+}
+
+.vision_images {
+    display: flex;
+    margin: 2rem 3rem 3rem 4rem;
+}
+
+.vision_statement {
+    font-size: 1rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+
+}
+
+.vision_statement h1 {
+    color: rgb(228, 142, 37);
+    font-size: 1.5rem;
+}
+
+.vision_statement h2 {
+    font-size: 2.7rem;
+    text-align: left;
+    margin: 1.8rem 0;
+}
+
+.vision_button {
+    margin-top: 3rem;
+}
+
+.hungry_kid img {
+    width: 12rem;
+}
+
+.hungry_kid {
+    padding: 0.4rem;
+}
+
+.download_one img {
+    border-radius: 0 3rem;
+    box-shadow: 5px 5px 5px rgb(138, 149, 153);
+}
+
+.download_two img {
+    border-radius: 3rem 0;
+    box-shadow: 5px 5px 5px rgb(138, 149, 153);
+}
+
+
+
+.download_four img {
+    border-radius: 3rem 0;
+    margin-top: 3.5rem;
+    box-shadow: 5px 5px 5px rgb(138, 149, 153);
+}
 
 
 
@@ -94,6 +187,8 @@
 
     }
 }
+
+
 
 
 

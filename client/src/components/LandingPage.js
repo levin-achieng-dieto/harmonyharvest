@@ -2,6 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBowlFood, faCircleDollarToSlot, faHandsHoldingChild } from '@fortawesome/free-solid-svg-icons'
 // import linsted from "./images/linsted-cropped.jpg"
+import downloadsOne from "./images/downloads 1.jpeg"
+import downloadsTwo from "./images/downloads 2.jpeg"
+import downloadsSeven from "./images/downloads 7.jpeg"
+import downloadsFive from "./images/downloads 5.jpeg"
 import "./LandingPage.css"
 
 function LandingPage() {
@@ -42,20 +46,37 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div></div>
-                    <div>
+            <div className="mission_vision">
+                {/* <h2>Our Mission & Vision</h2> */}
+                <div className="mission">
+                    <div className="mission_statement">
+                        <h1>About Us</h1>
                         <h2>Our Mission</h2>
-                        <div>To reduce food wastage and alleviate hunger, our mission is to connect surplus food from hotels and events with children's homes through an innovative Online Charity Management System. We aim to streamline the donation process by implementing real-time notifications and scheduling pick-up services for both food and physical goods. Our focus is on fostering collaboration between donors and beneficiaries, creating a sustainable solution that addresses the urgent need to channel surplus resources towards those in need.</div>
+                        <div>We envision a world where no child goes to bed hungry and where surplus resources are efficiently redirected to benefit those in need. Through our Online Charity Management System, we strive to create a seamless and user-friendly platform that empowers both tech-savvy and non-tech-savvy donors to contribute effortlessly.</div>
+                        <div className="vision_button"><a href="#" className="btn">Donate Today</a></div>
+                    </div>
+                    <div className="mission_image">
+                        <div>
+                            <div className="download_seven"><img src={downloadsSeven} alt="hungry kid" /></div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h2>Our Vission</h2>
-                        <div>We envision a world where no child goes to bed hungry and where surplus resources are efficiently redirected to benefit those in need. Through our Online Charity Management System, we strive to create a seamless and user-friendly platform that empowers both tech-savvy and non-tech-savvy donors to contribute effortlessly. By harnessing the power of technology, we aspire to build a global network that bridges the gap between surplus food providers and children's homes, fostering a community-driven approach to tackling food wastage and hunger</div>
+                <div className="vision">
+                    <div className="vision_images">
+                        <div className="mission_images_pair_one">
+                            <div className="hungry_kid download_four"><img src={downloadsOne} alt="hungry kid" /></div>
+                        </div>
+                        <div className="mission_images_pair_two">
+                            <div className="hungry_kid download_two"><img src={downloadsTwo} alt="hungry kid" /></div>
+                            <div className="hungry_kid download_one"><img src={downloadsFive} alt="hungry kid" /></div>
+                        </div>
                     </div>
-                    <div></div>
+                    <div className="vision_statement">
+                        <h1>What We Do</h1>
+                        <h2>Our Vision</h2>
+                        <div>To reduce food wastage and alleviate hunger, our mission is to connect surplus food from hotels and events with children's homes through an innovative Online Charity Management System. We aim to streamline the donation process by implementing real-time notifications and scheduling pick-up services for both food and physical goods.</div>
+                        <div className="vision_button"><a href="#" className="btn">Donate Today</a></div>
+                    </div>
                 </div>
             </div>
         </div>
