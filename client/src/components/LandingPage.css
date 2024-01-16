@@ -1,0 +1,102 @@
+.container-one {
+    background-color: #F5F5F5;
+}
+
+.body {
+    background-image: url(../components/images/linsted-cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 16rem;
+}
+
+.landing-page {
+    margin-top: 3.8rem;
+    background-color: rgba(22, 21, 21, 0.6);
+    padding-bottom: 17rem;
+}
+
+.who-we-are {
+    color: #fff;
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.icon {
+    font-size: 2.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.section-1 {
+    width: 60%;
+    margin: auto;
+}
+
+
+.section-2 {
+    color: black;
+    background-color: #fff;
+    margin-top: 10rem;
+    width: 40%;
+    padding: 4rem 2rem;
+    border-radius: 8rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Inria Serif', Garamond, serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.who-we-are h1 {
+    padding: 10rem 0 2rem 0;
+}
+
+.slogan {
+    font-size: 7rem;
+    margin-bottom: 3rem;
+}
+
+.card-container {
+    margin-top: -5rem;
+    padding-bottom: 5rem;
+
+}
+
+.cards {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    background-color: #fff;
+
+
+}
+
+.donation {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #F5F5F5;
+    padding: 4rem;
+}
+
+.donation h2 {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+@media (max-width: 850px) {
+    .landing-page {
+        margin-top: 6rem;
+
+    }
+}
+
+
+
+
+/* 8FBEAE */
+/* 1F1F1F */

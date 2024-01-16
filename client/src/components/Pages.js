@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LogInForm from "./Auth/LogInForm";
 // import SignUpForm from "./Auth/SignUpForm";
 import UserNavBar from "./UserNavBar"
+import LandingPage from "./LandingPage";
 
 
 function Pages({ onLogin }) {
@@ -11,6 +12,7 @@ function Pages({ onLogin }) {
         <>
             <div>
                 <UserNavBar />
+                <LandingPage />
             </div>
             <div>
                 {showLogin ? (
