@@ -1,0 +1,45 @@
+.footer {
+    background-color: #1F1F1F;
+    color: #fff;
+
+}
+
+.admin-login-form {
+    width: 25%;
+}
+
+/* 8FBEAE */
+/* 1F1F1F */
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.contacts {
+    display: flex;
+    padding-bottom: 1.6rem;
+}
+
+.contacts .icon {
+    margin-right: 2rem;
+    color: rgb(228, 142, 37);
+}
+
+.connect-with-us {
+    /* font-weight: 2rem; */
+}
+
+.connect-with-us h3 {}
+
+.connect-with-us h5 {
+    color: rgb(228, 142, 37);
+}
+
+.footer-columns h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
