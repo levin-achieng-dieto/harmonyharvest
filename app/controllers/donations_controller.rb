@@ -1,5 +1,4 @@
 class DonationsController < ApplicationController
-
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
     rescue_from ActiveRecord::RecordNotFound, with: :render_record_not_found
 
@@ -18,7 +17,7 @@ class DonationsController < ApplicationController
 
     def create
         donation = Donation.create!(donation_params)
-        render json: register, status: :created
+        render json: donation, status: :created
     end
 
     private
@@ -28,7 +27,7 @@ class DonationsController < ApplicationController
     end
 
     def render_record_not_found
-        render json: {error: "member not found"}, status: :not_found
+        render json: {error: "donation not found"}, status: :not_found
     end
 
     def donation_params

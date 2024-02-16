@@ -8,7 +8,6 @@ import { Routes, Route } from 'react-router-dom';
 import Pages from './components/Pages';
 
 
-
 function App() {
   const [user, setUser] = useState(null)
 

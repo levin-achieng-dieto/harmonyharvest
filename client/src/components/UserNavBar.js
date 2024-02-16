@@ -1,13 +1,7 @@
 import React from 'react';
 import "./UserNavbar.css"
-import { useNavigate } from 'react-router-dom';
 
 const UserNavBar = () => {
-
-    let navigate = useNavigate()
-    {/* <a href="#" className="btn" onClick={() => {
-                                navigate("/donations")
-                            }} > Donate Today</a> */}
     return (
         <>
             <div className='header'>
@@ -19,12 +13,10 @@ const UserNavBar = () => {
                     <nav className="nav">
                         <ul className='nav_list'>
                             <li className='nav_item'>
-                                <a href="#" className="nav_link" onClick={() => {
-                                    navigate("/")
-                                }}>Home</a>
+                                <a href="#" className="nav_link">Home</a>
                             </li>
                             <li className='nav_item'>
-                                <a href="#" className="nav_link" >About Us</a>
+                                <a href="#" className="nav_link">About Us</a>
                             </li>
                             <li className='nav_item'>
                                 <a href="#" className="nav_link">Projects</a>
