@@ -1,5 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import DonationList from './DonationList';
+import Donations from './Donations';
+import axios from 'axios';
+
+
+const api = "http://localhost:3000/donations";
 
 function Navbar({ user, setUser }) {
     function handleLogoutClick() {
@@ -9,6 +15,18 @@ function Navbar({ user, setUser }) {
             }
         })
     }
+
+    const [donation, setDonation] = useState([]);
+
+    useEffect(() => {
+        loadDonations();
+    }, []);
+
+    const loadDonations = async () => {
+        const response = await axios.get(api);
+        console.log(response);
+        setDonation(response.data);
+    };
 
     return (
         <>
@@ -22,6 +40,8 @@ function Navbar({ user, setUser }) {
                     Logout
                 </button>
             </nav>
+            <Donations donations={donation} loadDonations={loadDonations} />
+            <DonationList />
         </>
     )
 }

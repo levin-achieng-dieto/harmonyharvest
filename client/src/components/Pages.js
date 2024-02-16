@@ -8,6 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelopeOpen, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import "./Pages.css"
 import { Link, Route, Routes } from "react-router-dom"
+// import Donations from "./Donations";
+
+// import FoodDonationForm from "./FoodDonationForm";
 
 
 
@@ -16,12 +19,17 @@ function Pages({ onLogin }) {
 
     return (
         <>
+            <UserNavBar />
+            {/* <Donations /> */}
+            {/* <FoodDonationForm /> */}
+            {/* <Link to="/">home</Link> */}
             <Routes>
+                <Route path="/" element={<LandingPage />} />
                 <Route path="/donations" element={<Donations />} />
             </Routes>
             <div>
-                <UserNavBar />
-                <LandingPage />
+                {/* <UserNavBar />
+                <LandingPage /> */}
                 {/* <Donations /> */}
             </div>
             <footer className="footer">
@@ -50,10 +58,6 @@ function Pages({ onLogin }) {
                                 </>
                             )}
                         </div>
-                        {/* <div className="icon"><FontAwesomeIcon icon={fa0} /></div>
-                        <div className="icon"><FontAwesomeIcon icon={fa1} /></div>
-                        <div className="icon"><FontAwesomeIcon icon={fa2} /></div>
-                        <div className="icon"><FontAwesomeIcon icon={fa3} /></div> */}
                     </div>
                     <div className="footer-columns">
                         <h3>Quick Links</h3>

@@ -7,11 +7,14 @@ import downloadsTwo from "./images/downloads 2.jpeg"
 import downloadsSeven from "./images/downloads 7.jpeg"
 import downloadsFive from "./images/downloads 5.jpeg"
 import "./LandingPage.css"
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
 function LandingPage() {
+
+    let navigate = useNavigate()
+
     return (
         <div className="container-one">
             <div className="body">
@@ -23,7 +26,11 @@ function LandingPage() {
                                 <div>We Can Make</div>
                                 <div>A Difference</div>
                             </div>
-                            <a href="#" className="btn"> <Link to="/donations">Donate Today</Link> </a>
+                            <a href="#" className="btn"
+                            // onClick={() => {
+                            //     navigate("/donations")
+                            // }} 
+                            > Donate Today</a>
                         </di>
                         <div className="section-2">Welcome to HarmonyHarvest, where sustainable living meets modern convenience. At HarmonyHarvest, we're dedicated to providing eco-friendly solutions for a harmonious lifestyle. Explore our curated collection of ethically sourced products, ranging from organic home essentials to cutting-edge renewable energy innovations. Our mission is to empower individuals to make environmentally conscious choices without compromising on quality or style. Join us on the journey towards a greener, more sustainable future. Together, let's cultivate harmony and embrace a lifestyle that nurtures both the planet and its inhabitants. Experience the balance of nature and technology at HarmonyHarvest – where conscious living begins.</div>
                     </div>

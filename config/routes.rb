@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :donations
   # resources :admins, only: [:signup]
  
   post "/signup", to: "admins#signup"
